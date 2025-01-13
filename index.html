@@ -5,91 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folleto Informativo: Mi Hobby</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #6200ea;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        main {
-            padding: 1rem;
-        }
-
-        footer {
-            background-color: #6200ea;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .table-container {
-            margin: 2rem 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #6200ea;
-            color: white;
-        }
-
-        .button {
-            background-color: #6200ea;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #4500b5;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        form {
-            margin-top: 2rem;
-        }
-
-        form input, form button {
-            display: block;
-            margin: 0.5rem 0;
-            padding: 10px;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .form-error {
-            color: red;
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -147,31 +63,6 @@
         <p>&copy; 2024 Mi Hobby. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            alert("¡Bienvenido a mi página de jardinería!");
-
-            const toggleInfo = document.getElementById("toggleInfo");
-            const extraInfo = document.getElementById("extraInfo");
-
-            toggleInfo.addEventListener("click", () => {
-                extraInfo.classList.toggle("hidden");
-            });
-
-            const contactForm = document.getElementById("contactForm");
-            const emailInput = document.getElementById("email");
-            const error = document.getElementById("error");
-
-            contactForm.addEventListener("submit", (e) => {
-                e.preventDefault();
-                if (!emailInput.value || !emailInput.value.includes("@")) {
-                    error.classList.remove("hidden");
-                } else {
-                    error.classList.add("hidden");
-                    alert("¡Gracias por contactarnos!");
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
