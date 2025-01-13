@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const toggleInfo = document.getElementById("toggleInfo");
     const extraInfo = document.getElementById("extraInfo");
+    const wikiLink = document.getElementById("wikiLink");
 
     toggleInfo.addEventListener("click", () => {
         extraInfo.classList.toggle("hidden");
+        wikiLink.classList.toggle("hidden");
     });
 
     const contactForm = document.getElementById("contactForm");
